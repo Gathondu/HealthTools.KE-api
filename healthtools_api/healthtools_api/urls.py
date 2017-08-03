@@ -20,5 +20,6 @@ from . import views
 urlpatterns = [
     url(r'^$', views.index),
     url(r'^', include('kenya.urls')),
+    url(r'kenya/', include('kenya.clinical_officers.urls')),
     url(r'^admin/', admin.site.urls),
 ]

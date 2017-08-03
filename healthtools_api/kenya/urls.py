@@ -1,13 +1,11 @@
 from django.conf.urls import url
 
-from views import (clinical_officers, doctors, nurses, health_facilities,
+from views import (doctors, nurses, health_facilities,
                    nhif, sms_handler)
 
 urlpatterns = [
     url(r'^doctors/$', doctors.index),
     url(r'^doctors/search.json', doctors.search),
-    url(r'^clinical-officers/$', clinical_officers.index),
-    url(r'^clinical-officers/search.json', clinical_officers.search),
     url(r'^nurses/$', nurses.index),
     url(r'^nurses/search.json', nurses.search),
     url(r'^health-facilities/$', health_facilities.index),
